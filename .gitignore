@@ -1,7 +1,11 @@
-app.iml
 build
-.idea/libraries
-.idea/tasks.xml
-.idea/workspace.xml
-tags
 target
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+target
+.idea
+.lib
+.DS_Store

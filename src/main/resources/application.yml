@@ -2,9 +2,9 @@
 spring:
   datasource:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost/pong_matcher_spring_development
-    username: springpong
-    password: springpong
+    url: ${vcap.services.mysql-service.credentials.jdbcUrl}
+    username: ${vcap.services.mysql-service.credentials.username}
+    password: ${vcap.services.mysql-service.credentials.password}
   jpa:
     hibernate.ddl-auto: none
     show_sql: false
